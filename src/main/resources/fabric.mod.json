@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "adventure_map_utilities",
+  "version": "0.2.0",
+
+  "name": "Adventure Map Utilities",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Caoten_hoch2"
+  ],
+  "contact": {
+    "homepage": "https://caotenhoch2.wixsite.com/caotenhoch2",
+    "sources": "https://github.com/Caotenhoch2/AdventureMapUtilities"
+  },
+
+  "license": "MIT",
+  "icon": "assets/adventure_map_utilities/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "eu.caoten.adventure_map_utilities.Main"
+    ],
+    "client": [
+      "eu.caoten.adventure_map_utilities.Client"
+    ]
+  },
+  "mixins": [
+    "adventure_map_utilities.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/5fbT8jJ"
+      }
+    }
+  }
+}

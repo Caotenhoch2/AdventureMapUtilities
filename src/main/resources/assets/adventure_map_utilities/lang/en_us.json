@@ -1,0 +1,20 @@
+{
+  "key.category.adventure_map_utilities.amu": "Adventure Map Utilities",
+  "key.adventure_map_utilities.1": "Key 1",
+  "key.adventure_map_utilities.2": "Key 2",
+  "key.adventure_map_utilities.3": "Key 3",
+  "options.adventure_map_utilities.button": "AMU",
+  "options.adventure_map_utilities": "Adventure Map Utilities Options",
+  "options.adventure_map_utilities.key1.on": "Key 1: On",
+  "options.adventure_map_utilities.key1.off": "Key 1: Off",
+  "options.adventure_map_utilities.key2.on": "Key 2: On",
+  "options.adventure_map_utilities.key2.off": "Key 2: Off",
+  "options.adventure_map_utilities.key3.on": "Key 3: On",
+  "options.adventure_map_utilities.key3.off": "Key 3: Off",
+  "options.adventure_map_utilities.automaticdisabling.on": "Automatic Disabling: On",
+  "options.adventure_map_utilities.automaticdisabling.off": "Automatic Disabling: Off",
+  "options.adventure_map_utilities.automaticdisabling.tooltip": "Automatically disables the key bindings if no integration is detected!",
+  "options.adventure_map_utilities.checkagain": "Check again for integration!",
+  "options.adventure_map_utilities.checkagain.tooltip": "Checks again for integration in order to use the the hotkeys if automatic disabling is on!",
+  "message.adventure_map_utilities.nointegration": "§cNo integration found! You think it changed? Then try it manually!"
+}
