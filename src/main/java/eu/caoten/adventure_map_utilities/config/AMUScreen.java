@@ -115,7 +115,7 @@ public class AMUScreen extends Screen {
             k += 24;
             this.addDrawableChild(new ButtonWidget(i, k, 150, 20, Text.translatable("options.adventure_map_utilities.checkagain"), (button) -> {
                 client.player.sendCommand("trigger amu_trigger set 4");
-                Main.LOGGER.info("Tested for integration!");
+                Main.LOGGER.info("[AMU] Tested for integration!");
                 TEST_MANUEL = true;
                 client.player.closeScreen();
             }, tooltipSupplier2));

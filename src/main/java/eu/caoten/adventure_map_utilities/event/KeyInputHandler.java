@@ -72,7 +72,7 @@ public class KeyInputHandler {
                 else {
                     if (TEST_1) {
                         client.player.sendCommand("trigger amu_trigger set 4");
-                        Main.LOGGER.info("Tested for integration!");
+                        Main.LOGGER.info("[AMU] Tested for integration!");
                         TEST_1_TESTED = true;
                         TEST_1 = false;
                         TEST_2 = false;
@@ -95,7 +95,7 @@ public class KeyInputHandler {
                 else {
                     if (TEST_2) {
                         client.player.sendCommand("trigger amu_trigger set 4");
-                        Main.LOGGER.info("Tested for integration!");
+                        Main.LOGGER.info("[AMU] Tested for integration!");
                         TEST_2_TESTED = true;
                         TEST_1 = false;
                         TEST_2 = false;
@@ -118,7 +118,7 @@ public class KeyInputHandler {
                 else {
                     if (TEST_3) {
                         client.player.sendCommand("trigger amu_trigger set 4");
-                        Main.LOGGER.info("Tested for integration!");
+                        Main.LOGGER.info("[AMU] Tested for integration!");
                         TEST_3_TESTED = true;
                         TEST_1 = false;
                         TEST_2 = false;

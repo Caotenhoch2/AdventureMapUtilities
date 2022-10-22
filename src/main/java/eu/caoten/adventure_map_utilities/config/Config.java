@@ -23,7 +23,7 @@ public class Config {
             writer.write("options.adventure_map_utilities.automaticdisabling=" + AUTOMATICDISABLING + "\n");
             writer.write("options.adventure_map_utilities.showamubutton=" + SHOWAMUBUTTON + " #This can be changed manually!");
             writer.close();
-            Main.LOGGER.info("Wrote Config!");
+            Main.LOGGER.info("[AMU] Wrote Config!");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -41,7 +41,7 @@ public class Config {
                 String line6 = reader.readLine();
                 reader.close();
                 if (!line1.equals(Main.MOD_ID + ":" + Main.MOD_VERSION)) {
-                    Main.LOGGER.info("Altered or old config detected! Rewriting config...");
+                    Main.LOGGER.info("[AMU] Altered or old config detected! Rewriting config...");
                     Write();
                     return;
                 }
@@ -50,7 +50,7 @@ public class Config {
                 KEY3 = line4.equals("options.adventure_map_utilities.key3=true");
                 AUTOMATICDISABLING = line5.equals("options.adventure_map_utilities.automaticdisabling=true");
                 SHOWAMUBUTTON = line6.equals("options.adventure_map_utilities.showamubutton=true #This can be changed manually!");
-                Main.LOGGER.info("Read Config!");
+                Main.LOGGER.info("[AMU] Read Config!");
             } catch (IOException e) {
                 e.printStackTrace();
             }
