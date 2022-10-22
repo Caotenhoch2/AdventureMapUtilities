@@ -4,7 +4,7 @@
   "version": "0.2.1",
 
   "name": "Adventure Map Utilities",
-  "description": "This mod the client to interact with an adventure map, even if the mod is not present on the server!",
+  "description": "This mod helps the client to interact with an adventure map, even if the mod is not present on the server!",
   "authors": [
     "Caoten_hoch2"
   ],
