@@ -28,12 +28,12 @@ public class TestMessage {
             }
             else if (KeyInputHandler.TEST_2_TESTED) {
                 KeyInputHandler.TEST_2_TESTED = false;
-                client.player.sendCommand("trigger amu_trigger set 1");
+                client.player.sendCommand("trigger amu_trigger set 2");
                 Main.ENABLED_KEYBINDINGS = true;
             }
             else if (KeyInputHandler.TEST_3_TESTED) {
                 KeyInputHandler.TEST_3_TESTED = false;
-                client.player.sendCommand("trigger amu_trigger set 1");
+                client.player.sendCommand("trigger amu_trigger set 3");
                 Main.ENABLED_KEYBINDINGS = true;
             }
             else if (AMUScreen.TEST_MANUEL) {
