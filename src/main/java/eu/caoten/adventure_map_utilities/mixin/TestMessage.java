@@ -41,7 +41,7 @@ public class TestMessage {
                 AMUScreen.TEST_MANUEL = false;
             }
             else {
-                Main.LOGGER.error("[AMU] Received integration message but does not know what to do!");
+                Main.LOGGER.warn("[AMU] Received integration message but does not know what to do!");
             }
         }
     }
