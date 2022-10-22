@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "adventure_map_utilities",
-  "version": "0.2.0",
+  "version": "0.2.1",
 
   "name": "Adventure Map Utilities",
   "description": "This is an example description! Tell everyone what your mod is about!",
@@ -23,6 +23,9 @@
     ],
     "client": [
       "eu.caoten.adventure_map_utilities.Client"
+    ],
+    "modmenu": [
+      "eu.caoten.adventure_map_utilities.config.ModMenu"
     ]
   },
   "mixins": [

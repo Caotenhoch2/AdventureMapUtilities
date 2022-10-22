@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class Main implements ModInitializer {
 	public static final String MOD_ID = "adventure_map_utilities";
-	public static final String MOD_VERSION = "0.2.0";
+	public static final String MOD_VERSION = "0.2.1";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 	public static boolean ENABLED_KEYBINDINGS = true;
 
