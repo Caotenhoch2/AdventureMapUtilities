@@ -1,0 +1,20 @@
+{
+  "key.category.adventure_map_utilities.amu": "Adventure Map Utilities",
+  "key.adventure_map_utilities.1": "Taste 1",
+  "key.adventure_map_utilities.2": "Taste 2",
+  "key.adventure_map_utilities.3": "Taste 3",
+  "options.adventure_map_utilities.button": "AMU",
+  "options.adventure_map_utilities": "Adventure Map Utilities Optionen",
+  "options.adventure_map_utilities.key1.on": "Taste 1: An",
+  "options.adventure_map_utilities.key1.off": "Taste 1: Aus",
+  "options.adventure_map_utilities.key2.on": "Taste 2: An",
+  "options.adventure_map_utilities.key2.off": "Taste 2: Aus",
+  "options.adventure_map_utilities.key3.on": "Taste 3: An",
+  "options.adventure_map_utilities.key3.off": "Taste 3: Aus",
+  "options.adventure_map_utilities.automaticdisabling.on": "Automatisches Ausschalten: An",
+  "options.adventure_map_utilities.automaticdisabling.off": "Automatisches Ausschalten: Aus",
+  "options.adventure_map_utilities.automaticdisabling.tooltip": "Schaltet die Keybinds automatisch aus, wenn keine Integration erkannt wurde!",
+  "options.adventure_map_utilities.checkagain": "Teste erneut für Integration!",
+  "options.adventure_map_utilities.checkagain.tooltip": "Testet erneut für eine Integration der Mod um die Tasten benutzen zu können, wenn automatisches Ausschalten an ist!",
+  "message.adventure_map_utilities.nointegration": "§cKeine Integration gefunden! Du denkst es hat sich geändert? Dann überprüfe es manuell in den Einstellungen!!"
+}
