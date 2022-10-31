@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "adventure_map_utilities",
-  "version": "0.2.1",
+  "version": "1.0.0",
 
   "name": "Adventure Map Utilities",
   "description": "This mod helps the client to interact with an adventure map, even if the mod is not present on the server!",
