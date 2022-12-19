@@ -14,8 +14,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(OptionsScreen.class)
 public class OptionButton extends Screen {
-
-
     protected OptionButton(Text title) {
         super(title);
     }
@@ -23,9 +21,9 @@ public class OptionButton extends Screen {
     @Inject(at = @At("HEAD"), method = "render(Lnet/minecraft/client/util/math/MatrixStack;IIF)V")
     public void init(MatrixStack matrices, int mouseX, int mouseY, float delta, CallbackInfo ci) {
         if (Config.SHOWAMUBUTTON) {
-            this.addDrawableChild(new ButtonWidget(this.width / 2 + 164, this.height / 6 - 12, 50, 20, Text.translatable("options.adventure_map_utilities.button"), (button) -> {
+            this.addDrawableChild(ButtonWidget.builder(Text.translatable("options.adventure_map_utilities.button"), button -> {
                 this.client.setScreen(new AMUScreen(this));
-            }));
+            }).dimensions(this.width / 2 + 164, this.height / 6 - 12, 50, 20).build());
         }
     }
 }

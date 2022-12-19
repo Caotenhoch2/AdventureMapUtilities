@@ -23,17 +23,17 @@ public class TestMessage {
         if (message.contains(Text.literal("[AMU] Integration found!"))) {
             if (KeyInputHandler.TEST_1_TESTED) {
                 KeyInputHandler.TEST_1_TESTED = false;
-                client.player.sendCommand("trigger amu_trigger set 1");
+                client.getNetworkHandler().sendCommand("trigger amu_trigger set 1");
                 Main.ENABLED_KEYBINDINGS = true;
             }
             else if (KeyInputHandler.TEST_2_TESTED) {
                 KeyInputHandler.TEST_2_TESTED = false;
-                client.player.sendCommand("trigger amu_trigger set 2");
+                client.getNetworkHandler().sendCommand("trigger amu_trigger set 2");
                 Main.ENABLED_KEYBINDINGS = true;
             }
             else if (KeyInputHandler.TEST_3_TESTED) {
                 KeyInputHandler.TEST_3_TESTED = false;
-                client.player.sendCommand("trigger amu_trigger set 3");
+                client.getNetworkHandler().sendCommand("trigger amu_trigger set 3");
                 Main.ENABLED_KEYBINDINGS = true;
             }
             else if (AMUScreen.TEST_MANUEL) {

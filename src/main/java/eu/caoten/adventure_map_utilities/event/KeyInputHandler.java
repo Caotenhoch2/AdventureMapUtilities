@@ -67,11 +67,11 @@ public class KeyInputHandler {
         if (keybind == 1) {
             if (Config.AUTOMATICDISABLING) {
                 if (Main.ENABLED_KEYBINDINGS) {
-                    client.player.sendCommand("trigger amu_trigger set 1");
+                    client.getNetworkHandler().sendCommand("trigger amu_trigger set 1");
                 }
                 else {
                     if (TEST_1) {
-                        client.player.sendCommand("trigger amu_trigger set 4");
+                        client.getNetworkHandler().sendCommand("trigger amu_trigger set 4");
                         Main.LOGGER.info("[AMU] Tested for integration!");
                         TEST_1_TESTED = true;
                         TEST_1 = false;
@@ -84,17 +84,17 @@ public class KeyInputHandler {
                 }
             }
             else {
-                client.player.sendCommand("trigger amu_trigger set 1");
+                client.getNetworkHandler().sendCommand("trigger amu_trigger set 1");
             }
         }
         if (keybind == 2) {
             if (Config.AUTOMATICDISABLING) {
                 if (Main.ENABLED_KEYBINDINGS) {
-                    client.player.sendCommand("trigger amu_trigger set 2");
+                    client.getNetworkHandler().sendCommand("trigger amu_trigger set 2");
                 }
                 else {
                     if (TEST_2) {
-                        client.player.sendCommand("trigger amu_trigger set 4");
+                        client.getNetworkHandler().sendCommand("trigger amu_trigger set 4");
                         Main.LOGGER.info("[AMU] Tested for integration!");
                         TEST_2_TESTED = true;
                         TEST_1 = false;
@@ -107,17 +107,17 @@ public class KeyInputHandler {
                 }
             }
             else {
-                client.player.sendCommand("trigger amu_trigger set 2");
+                client.getNetworkHandler().sendCommand("trigger amu_trigger set 2");
             }
         }
         if (keybind == 3) {
             if (Config.AUTOMATICDISABLING) {
                 if (Main.ENABLED_KEYBINDINGS) {
-                    client.player.sendCommand("trigger amu_trigger set 3");
+                    client.getNetworkHandler().sendCommand("trigger amu_trigger set 3");
                 }
                 else {
                     if (TEST_3) {
-                        client.player.sendCommand("trigger amu_trigger set 4");
+                        client.getNetworkHandler().sendCommand("trigger amu_trigger set 4");
                         Main.LOGGER.info("[AMU] Tested for integration!");
                         TEST_3_TESTED = true;
                         TEST_1 = false;
@@ -130,7 +130,7 @@ public class KeyInputHandler {
                 }
             }
             else {
-                client.player.sendCommand("trigger amu_trigger set 3");
+                client.getNetworkHandler().sendCommand("trigger amu_trigger set 3");
             }
         }
     }

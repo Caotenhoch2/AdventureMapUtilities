@@ -9,5 +9,4 @@ public class Client implements ClientModInitializer {
     public void onInitializeClient() {
         KeyInputHandler.register();
     }
-
 }
