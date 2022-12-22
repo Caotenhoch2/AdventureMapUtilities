@@ -3,14 +3,10 @@ package eu.caoten.adventure_map_utilities.config;
 import eu.caoten.adventure_map_utilities.Main;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.tooltip.Tooltip;
-import net.minecraft.client.gui.tooltip.TooltipBackgroundRenderer;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.screen.ScreenTexts;
 import net.minecraft.text.Text;
-
-import java.io.IOException;
-import java.util.function.Consumer;
 
 
 public class AMUScreen extends Screen {
@@ -57,41 +53,25 @@ public class AMUScreen extends Screen {
         int k = this.height / 6 - 12;
         this.addDrawableChild(ButtonWidget.builder(key1(), button -> {
             Config.KEY1 = !Config.KEY1;
-            try {
-                Config.Write();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+            Config.Write();
             button.setMessage(key1());
         }).dimensions(i, k, 150, 20).build());
         this.addDrawableChild(ButtonWidget.builder(key2(), button -> {
             Config.KEY2 = !Config.KEY2;
-            try {
-                Config.Write();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+            Config.Write();
             button.setMessage(key2());
         }).dimensions(j, k, 150, 20).build());
         k += 24;
         this.addDrawableChild(ButtonWidget.builder(key3(), button -> {
             Config.KEY3 = !Config.KEY3;
-            try {
-                Config.Write();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+            Config.Write();
             button.setMessage(key3());
         }).dimensions(i, k, 150, 20).build());
 
         Text text = Text.translatable("options.adventure_map_utilities.automaticdisabling.tooltip");
         this.addDrawableChild(ButtonWidget.builder(Text.translatable("options.adventure_map_utilities.checkagain"), button -> {
             Config.AUTOMATICDISABLING = !Config.AUTOMATICDISABLING;
-            try {
-                Config.Write();
-            } catch (IOException e) {
-                throw new RuntimeException(e);
-            }
+            Config.Write();
             button.setMessage(automaticdisabling());
         }).dimensions(j, k, 150, 20).tooltip(Tooltip.of(text)).build());
 

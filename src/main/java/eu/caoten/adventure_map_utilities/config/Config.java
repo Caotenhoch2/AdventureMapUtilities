@@ -13,7 +13,7 @@ public class Config {
 
     public static File CONFIG = new File("config/AMU-Config.properties");
 
-    public static void Write() throws IOException {
+    public static void Write() {
         try {
             BufferedWriter writer = new BufferedWriter(new FileWriter(CONFIG));
             writer.write(Main.MOD_ID + ":" + Main.MOD_VERSION + "\n");
@@ -29,7 +29,7 @@ public class Config {
         }
     }
 
-    public static void Read() throws IOException {
+    public static void Read() {
         if (CONFIG.exists()) {
             try {
                 BufferedReader reader = new BufferedReader(new FileReader(CONFIG));

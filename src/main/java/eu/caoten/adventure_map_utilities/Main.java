@@ -5,8 +5,6 @@ import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.IOException;
-
 public class Main implements ModInitializer {
 	public static final String MOD_ID = "adventure_map_utilities";
 	public static final String MOD_VERSION = "1.0.1";
@@ -15,10 +13,6 @@ public class Main implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		try {
-			Config.Read();
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
+		Config.Read();
 	}
 }
