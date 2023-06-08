@@ -8,8 +8,8 @@ public class Config {
     public static boolean KEY1 = true;
     public static boolean KEY2 = true;
     public static boolean KEY3 = true;
-    public static boolean AUTOMATICDISABLING = true;
-    public static boolean SHOWAMUBUTTON = true;
+    public static boolean AUTOMATIC_DISABLING = true;
+    public static boolean SHOW_AMUBUTTON = true;
 
     public static File CONFIG = new File("config/AMU-Config.properties");
 
@@ -20,8 +20,8 @@ public class Config {
             writer.write("options.adventure_map_utilities.key1=" + KEY1 + "\n");
             writer.write("options.adventure_map_utilities.key2=" + KEY2 + "\n");
             writer.write("options.adventure_map_utilities.key3=" + KEY3 + "\n");
-            writer.write("options.adventure_map_utilities.automaticdisabling=" + AUTOMATICDISABLING + "\n");
-            writer.write("options.adventure_map_utilities.showamubutton=" + SHOWAMUBUTTON + " #This can be changed manually!");
+            writer.write("options.adventure_map_utilities.automaticdisabling=" + AUTOMATIC_DISABLING + "\n");
+            writer.write("options.adventure_map_utilities.showamubutton=" + SHOW_AMUBUTTON + " #This can be changed manually!");
             writer.close();
             Main.LOGGER.info("[AMU] Wrote Config!");
         } catch (IOException e) {
@@ -30,7 +30,7 @@ public class Config {
     }
 
     public static void Read() {
-        if (CONFIG.exists()) {
+        if (CONFIG.exists() && CONFIG.isFile()) {
             try {
                 BufferedReader reader = new BufferedReader(new FileReader(CONFIG));
                 String line1 = reader.readLine();
@@ -40,22 +40,16 @@ public class Config {
                 String line5 = reader.readLine();
                 String line6 = reader.readLine();
                 reader.close();
-                if (!line1.equals(Main.MOD_ID + ":" + Main.MOD_VERSION)) {
-                    Main.LOGGER.info("[AMU] Altered or old config detected! Rewriting config...");
-                    Write();
-                    return;
-                }
                 KEY1 = line2.equals("options.adventure_map_utilities.key1=true");
                 KEY2 = line3.equals("options.adventure_map_utilities.key2=true");
                 KEY3 = line4.equals("options.adventure_map_utilities.key3=true");
-                AUTOMATICDISABLING = line5.equals("options.adventure_map_utilities.automaticdisabling=true");
-                SHOWAMUBUTTON = line6.equals("options.adventure_map_utilities.showamubutton=true #This can be changed manually!");
+                AUTOMATIC_DISABLING = line5.equals("options.adventure_map_utilities.automaticdisabling=true");
+                SHOW_AMUBUTTON = line6.equals("options.adventure_map_utilities.showamubutton=true #This can be changed manually!");
                 Main.LOGGER.info("[AMU] Read Config!");
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }
-        else {
+        } else {
             Write();
         }
     }

@@ -5,8 +5,7 @@
   "compatibilityLevel": "JAVA_17",
   "client": [
     "JoinServer",
-    "OptionButton",
-    "TestMessage"
+    "OptionButton"
   ],
   "injectors": {
     "defaultRequire": 1

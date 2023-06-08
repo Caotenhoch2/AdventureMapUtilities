@@ -16,5 +16,6 @@
   "options.adventure_map_utilities.automaticdisabling.tooltip": "¡pǝʇɔǝʇǝp sᴉ uoᴉʇɐɹƃǝʇuᴉ ou ɟᴉ sƃuᴉpuᴉq ʎǝʞ ǝɥʇ sǝlqɐsᴉp ʎllɐɔᴉʇɐɯoʇn∀",
   "options.adventure_map_utilities.checkagain": "¡uoᴉʇɐɹƃǝʇuᴉ ɹoɟ uᴉɐƃɐ ʞɔǝɥƆ",
   "options.adventure_map_utilities.checkagain.tooltip": "¡uo sᴉ ƃuᴉlqɐsᴉp ɔᴉʇɐɯoʇnɐ ɟᴉ sʎǝʞʇoɥ ǝɥʇ ǝsn oʇ ɹǝpɹo uᴉ uoᴉʇɐɹƃǝʇuᴉ ɹoɟ uᴉɐƃɐ sʞɔǝɥƆ",
-  "message.adventure_map_utilities.nointegration": "§c¡ʎllɐnuɐɯ ʇᴉ ʎɹʇ uǝɥ┴ ¿pǝƃuɐɥɔ ʇᴉ ʞuᴉɥʇ no⅄ ¡punoɟ uoᴉʇɐɹƃǝʇuᴉ oN"
+  "message.adventure_map_utilities.nointegration": "§c¡ʎllɐnuɐɯ ʇᴉ ʎɹʇ uǝɥ┴ ¿pǝƃuɐɥɔ ʇᴉ ʞuᴉɥʇ no⅄ ¡punoɟ uoᴉʇɐɹƃǝʇuᴉ oN",
+  "message.adventure_map_utilities.nointegrationfound": "§c¡punoɟ uǝǝq sɐɥ uoᴉʇɐɹƃǝʇuᴉ oN"
 }

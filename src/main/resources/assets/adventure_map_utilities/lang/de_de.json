@@ -16,5 +16,6 @@
   "options.adventure_map_utilities.automaticdisabling.tooltip": "Schaltet die Keybinds automatisch aus, wenn keine Integration erkannt wurde!",
   "options.adventure_map_utilities.checkagain": "Teste erneut für Integration!",
   "options.adventure_map_utilities.checkagain.tooltip": "Testet erneut für eine Integration der Mod um die Tasten benutzen zu können, wenn automatisches Ausschalten an ist!",
-  "message.adventure_map_utilities.nointegration": "§cKeine Integration gefunden! Du denkst es hat sich geändert? Dann überprüfe es manuell in den Einstellungen!!"
+  "message.adventure_map_utilities.nointegration": "§cKeine Integration gefunden! Du denkst es hat sich geändert? Dann überprüfe es manuell in den Einstellungen!!",
+  "message.adventure_map_utilities.nointegrationfound": "§cEs wurde keine Integration gefunden!"
 }

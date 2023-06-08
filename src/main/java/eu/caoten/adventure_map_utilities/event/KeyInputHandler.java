@@ -65,7 +65,7 @@ public class KeyInputHandler {
 
     public static void testFurther(MinecraftClient client, int keybind) {
         if (keybind == 1) {
-            if (Config.AUTOMATICDISABLING) {
+            if (Config.AUTOMATIC_DISABLING) {
                 if (Main.ENABLED_KEYBINDINGS) {
                     client.getNetworkHandler().sendCommand("trigger amu_trigger set 1");
                 }
@@ -88,7 +88,7 @@ public class KeyInputHandler {
             }
         }
         if (keybind == 2) {
-            if (Config.AUTOMATICDISABLING) {
+            if (Config.AUTOMATIC_DISABLING) {
                 if (Main.ENABLED_KEYBINDINGS) {
                     client.getNetworkHandler().sendCommand("trigger amu_trigger set 2");
                 }
@@ -111,7 +111,7 @@ public class KeyInputHandler {
             }
         }
         if (keybind == 3) {
-            if (Config.AUTOMATICDISABLING) {
+            if (Config.AUTOMATIC_DISABLING) {
                 if (Main.ENABLED_KEYBINDINGS) {
                     client.getNetworkHandler().sendCommand("trigger amu_trigger set 3");
                 }

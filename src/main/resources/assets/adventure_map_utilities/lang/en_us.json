@@ -16,5 +16,6 @@
   "options.adventure_map_utilities.automaticdisabling.tooltip": "Automatically disables the key bindings if no integration is detected!",
   "options.adventure_map_utilities.checkagain": "Check again for integration!",
   "options.adventure_map_utilities.checkagain.tooltip": "Checks again for integration in order to use the hotkeys if automatic disabling is on!",
-  "message.adventure_map_utilities.nointegration": "§cNo integration found! You think it changed? Then try it manually!"
+  "message.adventure_map_utilities.nointegration": "§cNo integration found! You think it changed? Then try it manually!",
+  "message.adventure_map_utilities.nointegrationfound": "§cNo integration has been found!"
 }
