@@ -7,6 +7,7 @@ import net.minecraft.client.MinecraftClient;
 import net.minecraft.text.Text;
 
 public class ClientReceiveMessageEvent implements ClientReceiveMessageEvents.AllowGame{
+    public static boolean JOIN_CHECK = false;
 
     @Override
     public boolean allowReceiveGameMessage(Text message, boolean overlay) {
@@ -30,6 +31,10 @@ public class ClientReceiveMessageEvent implements ClientReceiveMessageEvents.All
             else if (AMUScreen.TEST_MANUEL) {
                 Main.ENABLED_KEYBINDINGS = true;
                 AMUScreen.TEST_MANUEL = false;
+            }
+            else if (JOIN_CHECK) {
+                Main.ENABLED_KEYBINDINGS = true;
+                JOIN_CHECK = false;
             }
             else {
                 Main.LOGGER.warn("[AMU] Received integration message but does not know what to do!");

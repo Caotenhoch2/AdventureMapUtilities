@@ -13,6 +13,8 @@
   "options.adventure_map_utilities.key3.off": "Key 3: Off",
   "options.adventure_map_utilities.automaticdisabling.on": "Automatic Disabling: On",
   "options.adventure_map_utilities.automaticdisabling.off": "Automatic Disabling: Off",
+  "options.adventure_map_utilities.checkonjoin.on": "Check on Join: On",
+  "options.adventure_map_utilities.checkonjoin.off": "Check on Join: Off",
   "options.adventure_map_utilities.automaticdisabling.tooltip": "Automatically disables the key bindings if no integration is detected!",
   "options.adventure_map_utilities.checkagain": "Check again for integration!",
   "options.adventure_map_utilities.checkagain.tooltip": "Checks again for integration in order to use the hotkeys if automatic disabling is on!",
