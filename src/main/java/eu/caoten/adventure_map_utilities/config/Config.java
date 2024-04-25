@@ -11,7 +11,7 @@ public class Config {
     public static boolean KEY3 = true;
     public static boolean AUTOMATIC_DISABLING = true;
     public static boolean SHOW_AMUBUTTON = true;
-    public static boolean SEND_CHECK_ON_JOIN = false;
+    public static boolean SEND_CHECK_ON_JOIN = true;
 
     public static File CONFIG = new File("config/AMU-Config.properties");
 
