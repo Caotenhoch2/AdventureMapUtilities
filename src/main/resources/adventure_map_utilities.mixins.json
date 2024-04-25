@@ -4,8 +4,7 @@
   "package": "eu.caoten.adventure_map_utilities.mixin",
   "compatibilityLevel": "JAVA_17",
   "client": [
-    "JoinServer",
-    "OptionButton"
+    "JoinServer"
   ],
   "injectors": {
     "defaultRequire": 1
