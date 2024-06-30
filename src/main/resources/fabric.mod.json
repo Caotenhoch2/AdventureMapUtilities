@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "adventure_map_utilities",
-  "version": "1.0.8",
+  "version": "1.0.9",
 
   "name": "Adventure Map Utilities",
   "description": "This mod helps the client to interact with an adventure map, even if the mod is not present on the server!",
@@ -33,9 +33,9 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.15.10",
+    "fabricloader": ">=0.15.11",
     "fabric-api": "*",
-    "minecraft": "~1.20.6",
+    "minecraft": "~1.21",
     "java": ">=21"
   },
   "suggests": {
